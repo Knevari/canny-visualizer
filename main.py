@@ -61,7 +61,7 @@ def main():
     high_threshold = edges.getHighThreshold()
 
     print("blur_image = cv2.GaussianBlur(gray_image, (%d, %d), 0)" % (ksize, ksize))
-    print("edges = cv2.Canny(gray_image, %d, %d)" % (low_threshold, high_threshold))
+    print("edges = cv2.Canny(blur_image, %d, %d)" % (low_threshold, high_threshold))
 
 
 if __name__ == '__main__':
